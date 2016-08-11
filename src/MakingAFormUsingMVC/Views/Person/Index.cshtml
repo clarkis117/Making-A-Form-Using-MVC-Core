@@ -1,0 +1,34 @@
+﻿@model  MakingAFormUsingMVC.Models.Person
+
+<form asp-action="Index" asp-controller="Person">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="form-group">
+        <label asp-for="FirstName" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input asp-for="FirstName" class="form-control" />
+            <span asp-validation-for="FirstName" class="text-danger" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="LastName" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input asp-for="LastName" class="form-control" />
+            <span asp-validation-for="LastName" class="text-danger" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="Age" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input asp-for="Age" class="form-control" />
+            <span asp-validation-for="Age" class="text-danger" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="EmailAddress" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input asp-for="EmailAddress" class="form-control" />
+            <span asp-validation-for="EmailAddress" class="text-danger" />
+        </div>
+    </div>
+    <button type="submit">Submit</button>
+</form>
